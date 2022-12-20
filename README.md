@@ -84,5 +84,11 @@ $ php artisan serve
     for admin
 
     POST    /admin/create/user = for create user
+    
+    Authentication Login
+    
+    in headers postman add this
+    Accept              Application/json
+    Authorization       Bearer {token_login}
 
 ```
