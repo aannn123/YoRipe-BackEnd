@@ -87,6 +87,7 @@ $ php artisan serve
     
     Authentication Login
     
+    for access route except login
     in headers postman add this
     Accept              Application/json
     Authorization       Bearer {token_login}
