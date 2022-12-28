@@ -42,7 +42,7 @@ class BlogController extends Controller
             );
 
             if ($validateUser->fails()) {
-                return $this->responseValidate(401, false, 'validation error', $validateUser->errors());
+                return $this->responseValidate(400, false, 'validation error', $validateUser->errors());
             }
 
             $blog = Blog::create([
@@ -70,7 +70,7 @@ class BlogController extends Controller
             );
 
             if ($validateUser->fails()) {
-                return $this->responseValidate(401, false, 'validation error', $validateUser->errors());
+                return $this->responseValidate(400, false, 'validation error', $validateUser->errors());
             }
 
             $blog = $this->checkRole($id);

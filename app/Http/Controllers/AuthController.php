@@ -21,7 +21,7 @@ class AuthController extends Controller
             );
 
             if ($validateUser->fails()) {
-                return $this->responseValidate(401, false, 'validation error', $validateUser->errors());
+                return $this->responseValidate(400, false, 'validation error', $validateUser->errors());
             }
 
             if (!Auth::attempt($request->only(['email', 'password']))) {

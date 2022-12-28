@@ -1,4 +1,4 @@
-#  YoRipe BackEnd Test Review Application
+# BackEnd Test Review Application
 
 ###  Installation
 
@@ -6,7 +6,7 @@
 
 ```bash
 
-$ git clone https://github.com/aannn123/YoRipe-BackEnd.git
+# $ git clone https://github.com/aannn123/YoRipe-BackEnd.git
 
 ```
 2. Composer install
@@ -92,4 +92,13 @@ $ php artisan serve
     Accept              Application/json
     Authorization       Bearer {token_login}
 
+```
+
+9. Run Unit Test
+
+```bash
+
+$ php artisan test
+
+note: change token in file BlogTest and AdminTest
 ```
